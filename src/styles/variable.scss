@@ -1,0 +1,34 @@
+/* Google  Fonts Link */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+//font families//
+$poppins: "Poppins", sans-serif;
+$inter: "Inter", sans-serif;
+
+//font weights//
+$weight-light: 300;
+$weight-normal: 400;
+$weight-medium: 500;
+$weight-semi-bold: 600;
+$weight-bold: 700;
+
+//Media Breakpoints//
+// max-width
+
+$phone_max: "max-width:576px";
+$tablet_max: "max-width:768px";
+$desktop_max: "max-width:1024px";
+$large-screen_max: "max-width:1280px";
+
+// min-width
+
+$phone_min: "min-width:576px";
+$tablet_min: "min-width:768px";
+$desktop_min: "min-width:1024px";
+$large-screen_min: "min-width:1280px";
+
+// Colors //
+$btnColor: "#F86061";
+$textPrimry: "#2e2e2e";
+$tundora: "#4d4d4d";
+$carnation: "#F55253";

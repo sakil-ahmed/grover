@@ -1,0 +1,115 @@
+@use "./../../styles/variable" as *;
+
+.feature1__section {
+  padding: 140px 0;
+  @media ($desktop_max) {
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media ($desktop_max) {
+      flex-wrap: wrap;
+    }
+
+    .left {
+      position: relative;
+    }
+
+    .right {
+      margin-top: 20px;
+      @media (min-width: 1115px) {
+        margin-bottom: -135px;
+      }
+      @media ($desktop_min) {
+        max-width: 394px;
+        margin-top: 0;
+      }
+
+      .small__title {
+        color: #03a66b;
+        margin-bottom: 8px;
+      }
+
+      .title {
+        margin-bottom: 22px;
+        color: #2e2e2e;
+        @media ($phone_max) {
+          font-size: 30px;
+          line-height: 40px;
+        }
+      }
+
+      .description {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+.card {
+  background: #ffffff;
+  box-shadow: 0px 60px 100px -10px rgba(86, 0, 0, 0.08);
+  border-radius: 12px;
+  width: 204px;
+  padding: 30px 19px 21px;
+  position: absolute;
+  top: 42%;
+  right: -10%;
+  @media (max-width: 1115px) {
+    display: none;
+  }
+
+  &__title {
+    font: normal $weight-bold 18px $inter;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    color: #2e2e2e;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  &__description {
+    font: normal $weight-medium 12px $inter;
+    text-align: center;
+  }
+
+  &__img {
+    margin: 30px auto;
+  }
+
+  .rating {
+    display: flex;
+    align-items: center;
+    font: normal $weight-medium 16px $inter;
+    line-height: 20px;
+    color: #2e2e2e;
+    column-gap: 2px;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .price {
+      font: normal $weight-bold 22px $inter;
+      line-height: 20px;
+      letter-spacing: -0.01em;
+      color: #2e2e2e;
+    }
+
+    .btn {
+      border: none;
+      outline: none;
+      padding: 10px 12px;
+      background: #f54748;
+      box-shadow: 0px 16px 30px rgba(245, 71, 72, 0.15);
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+}

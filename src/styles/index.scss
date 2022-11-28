@@ -1,0 +1,106 @@
+@use "./variable" as *;
+/* Reset Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Global Styles */
+.container {
+  max-width: 1220px;
+  width: 100%;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+.h1 {
+  font: normal $weight-bold 74px $poppins;
+  line-height: 88px;
+  letter-spacing: -0.01em;
+  color: $textPrimry;
+}
+
+h2,
+.h2 {
+  font: normal $weight-bold 40px $poppins;
+  line-height: 54px;
+  color: $textPrimry;
+}
+
+h3,
+.h3 {
+  font: normal $weight-semi-bold 22px $poppins;
+  line-height: 33px;
+  letter-spacing: -0.01em;
+  color: $textPrimry;
+}
+
+h6,
+.h6 {
+  font: normal $weight-medium 18px $poppins;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+}
+
+p,
+.p {
+  font: normal $weight-normal 16px $poppins;
+  line-height: 30px;
+  color: #676767;
+}

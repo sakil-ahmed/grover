@@ -1,0 +1,41 @@
+@use "../../styles/variable" as *;
+.feature2__section {
+  padding: 0 0 40px 0;
+  @media ($desktop_min) {
+    padding: 0 0 120px 0;
+  }
+
+  .row {
+    @media ($desktop_min) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 100px;
+    }
+
+    .left {
+      &__small__title {
+        color: #f9ba45;
+        margin-bottom: 8px;
+      }
+
+      &__title {
+        margin-bottom: 22px;
+        @media ($desktop_min) {
+          max-width: 519px;
+        }
+        @media ($phone_max) {
+          font-size: 30px;
+          line-height: 40px;
+        }
+      }
+
+      &__descptrion {
+        margin-bottom: 50px;
+        @media ($desktop_min) {
+          max-width: 465px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@use "../../styles/variable" as *;
+
+.service__card {
+  max-width: 300px;
+  text-align: center;
+  padding: 55px 28px;
+  background-color: #fff;
+  border-radius: 12px;
+  position: relative;
+
+  .hover__effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 334px;
+    width: 310px;
+    background-color: #fe6a6a;
+    z-index: -1;
+  }
+
+  &__icon {
+    margin-bottom: 48px;
+    height: 80px;
+
+    .icon {
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    color: #2e2e2e;
+    margin-bottom: 15px;
+  }
+
+  &__description {
+    font: normal $weight-normal 14px $poppins;
+    line-height: 25px;
+    color: #676767;
+  }
+}

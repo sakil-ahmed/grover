@@ -1,0 +1,232 @@
+@use "./../../styles/variable" as *;
+
+.hero__section {
+  padding-top: 40px;
+  @media ($desktop_min) {
+    padding: 40px 0 140px 0;
+  }
+}
+
+.row {
+  @media ($desktop_min) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero__left {
+    @media ($desktop_max) {
+      text-align: center;
+    }
+
+    @media ($tablet_max) {
+      text-align: left;
+    }
+
+    .sm__title {
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      padding: 11px 20px;
+      background-color: #fdecec;
+      border-radius: 23px;
+      margin-bottom: 20px;
+
+      &__text {
+        line-height: 16px;
+        color: #f55556;
+        font: normal $weight-medium 16px $poppins;
+      }
+
+      &__icon {
+        margin-left: 12px;
+      }
+    }
+
+    .title {
+      margin-bottom: 22px;
+
+      @media ($tablet_max) {
+        font-size: 40px;
+        line-height: 40px;
+      }
+      @media ($phone_max) {
+        font-size: 25px;
+        line-height: 30px;
+      }
+      @media ($desktop_min) {
+        max-width: 578px;
+      }
+
+      span {
+        color: #f54748;
+        font-weight: 500;
+      }
+    }
+
+    .description {
+      letter-spacing: 0.005em;
+      margin-bottom: 60px;
+
+      @media ($desktop_min) {
+        max-width: 478px;
+      }
+    }
+
+    &__buttons {
+      @media ($tablet_min) {
+        display: flex;
+      }
+
+      .button {
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        @media ($tablet_min) {
+          margin-left: 34px;
+          margin-top: 0;
+        }
+
+        &__icon {
+          width: 70px;
+          height: 70px;
+          background: #ffffff;
+          box-shadow: 0px 20px 49px -10px rgba(0, 0, 0, 0.08);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          margin-right: 16px;
+
+          .icon {
+            width: 17px;
+            height: 17px;
+            box-shadow: 0px 8px 15px rgba(253, 197, 94, 0.2);
+          }
+        }
+
+        &__text {
+          line-height: 20px;
+          letter-spacing: -0.01em;
+          color: #363636;
+          font: normal $weight-medium 20px $poppins;
+        }
+      }
+    }
+  }
+
+  .hero__right {
+    position: relative;
+    img {
+      @media ($desktop_max) {
+        margin: 0 auto;
+      }
+    }
+    .AbstractIcon {
+      position: absolute;
+      right: -8%;
+      top: 29%;
+      transform: rotate(-8.37deg);
+      z-index: -1;
+      @media ($large-screen_max) {
+        display: none;
+      }
+    }
+
+    .hero__card {
+      min-width: 182px;
+      text-align: center;
+      background: #ffffff;
+      box-shadow: 0px 50px 80px rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
+      position: absolute;
+      top: 19%;
+      left: -34%;
+
+      @media (max-width: 1150px) {
+        display: none;
+      }
+
+      &__img {
+        margin: 0 auto;
+        padding-bottom: 30px;
+      }
+
+      &__title {
+        font: normal $weight-semi-bold 12px $poppins;
+        line-height: 18px;
+        color: #2e2e2e;
+        margin-bottom: 22px;
+      }
+
+      &__price {
+        font: normal $weight-bold 22px $poppins;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        color: #2e2e2e;
+        margin-bottom: 6px;
+      }
+
+      &__description {
+        font-weight: $weight-medium;
+        font-size: 10px;
+        line-height: 10px;
+        color: #a5a5a5;
+        margin-bottom: 50px;
+      }
+
+      &__cart__btn {
+        padding: 13px 14px;
+        border: none;
+        outline: none;
+        background: linear-gradient(180deg, #ff7071 0%, #e73d3e 100%);
+        box-shadow: 0px -6px 40px rgba(235, 69, 70, 0.2);
+        border-radius: 10px;
+        color: #ffffff;
+        font-size: 21px;
+        position: absolute;
+        bottom: -9%;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+      }
+    }
+
+    .delivary__time {
+      background: #ffffff;
+      box-shadow: 0px 40px 70px -10px rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
+      max-width: 160px;
+      display: flex;
+      align-items: center;
+      padding: 16px 20px;
+      position: absolute;
+      right: -10%;
+      top: 13%;
+
+      @media (max-width: 1150px) {
+        display: none;
+      }
+
+      &__icon {
+        width: 34px;
+        height: 34px;
+        margin-right: 18px;
+      }
+
+      &__description {
+        line-height: 20px;
+        span {
+          display: block;
+          font: normal $weight-semi-bold 16px $poppins;
+          color: #404040;
+        }
+      }
+    }
+  }
+}

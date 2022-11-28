@@ -1,0 +1,36 @@
+@use "../../styles/variable" as *;
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 25px 40px;
+  border-radius: 12px;
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: $weight-medium;
+  font-size: 20px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all, 0.2s ease-in-out;
+}
+
+.normal {
+  background-color: #f86061;
+  color: #fffafa;
+  border: 1px solid #f86061;
+  &:hover {
+    color: #f86061;
+    background: transparent;
+  }
+}
+
+.outline {
+  background: transparent;
+  color: #f86061;
+  border: 1px solid #f86061;
+
+  &:hover {
+    background-color: #f86061;
+    color: #fffafa;
+  }
+}
